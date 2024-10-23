@@ -1,0 +1,23 @@
+<div class="flex row centered buttons">
+    <% if (buttons && buttons.length > 0) { %>
+        <% buttons.forEach(function(button) { %>
+            <div class="frame">
+                <div class="button">
+                    <img src="<%= button.img %>" alt="<%= button.alt %>">
+                </div>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <p>No buttons available</p>
+    <% } %>
+</div>
+
+<!-- <div class="flex row centered buttons">
+    <% buttons.forEach(button => { %>
+        <div class="frame">
+            <div class="button">
+                <img src="<%=button.img%>" alt="<%=button.alt%>">
+            </div>
+        </div>
+    <% })%>
+</div> -->
